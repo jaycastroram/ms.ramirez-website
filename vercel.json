@@ -19,14 +19,8 @@
       "continue": true
     },
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html",
-      "headers": {
-        "Content-Type": "text/html"
-      }
+      "dest": "/index.html"
     }
   ]
 }
