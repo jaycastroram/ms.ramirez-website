@@ -9,26 +9,8 @@ export default defineConfig({
     outDir: "dist",
     assetsDir: "assets",
     sourcemap: true,
-    rollupOptions: {
-      input: {
-        main: "./index.html",
-      },
-      output: {
-        format: "es",
-        entryFileNames: "assets/[name]-[hash].js",
-        chunkFileNames: "assets/[name]-[hash].js",
-        assetFileNames: "assets/[name]-[hash].[ext]",
-      },
-    },
   },
   server: {
     port: 3000,
-    headers: {
-      "Content-Type": "application/javascript",
-    },
   },
-  optimizeDeps: {
-    include: ["react", "react-dom", "react-router-dom", "framer-motion"],
-  },
-  publicDir: "public",
 });
