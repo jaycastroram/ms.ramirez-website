@@ -20,6 +20,9 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    headers: {
+      "Content-Type": "application/javascript",
+    },
   },
   optimizeDeps: {
     include: ["react", "react-dom", "react-router-dom", "framer-motion"],
